@@ -417,6 +417,42 @@ html {
   padding: 40px 20px;
 }
 
+/* 🔷 Google-style heading for Student Stories */
+/* =====================================================
+   🔷 STORIES PAGE BACKGROUND
+===================================================== */
+.stories-bg {
+  background: #ffffff; /* change to any color you want */
+}
+
+.google-style-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 80px;
+  letter-spacing: -1px;
+}
+
+.google-text {
+  background: linear-gradient(to right,
+    #4285F4 0%,
+    #EA4335 25%,
+    #FBBC05 50%,
+    #34A853 75%,
+    #4285F4 100%);
+  -webkit-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gray-text {
+  color: #5f6368;
+  margin-left: 8px;
+}
+/* 🔷 End for google style */
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -472,3 +508,21 @@ html {
   font-weight: bold;
   cursor: pointer;
 }
+
+
+/* =====================================================
+   🔷 iOS-style Glass Box with Orange Tint
+===================================================== */
+.glass-box {
+  background: rgba(255, 140, 0, 0.08); /* orange tint with smoky transparency */
+  border-radius: 20px;
+  padding: 0px;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(255, 140, 0, 0.3); /* warm orange glow */
+  border: 1px solid rgba(255, 140, 0, 0.2);
+}
+
