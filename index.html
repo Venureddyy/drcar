@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<!--Splash-->
-<div id="splash-screen">
+<!-- Splash -->
+<!-- <div id="splash-screen">
   <img src="videos/splash.gif" alt="Splash Animation" />
-</div>
+</div> -->
 
 
 
@@ -34,7 +34,7 @@
       <nav class="nav-links" id="navLinks">
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li><a href="#why">Why?</a></li>
+          <li><a href="#why">Our Pride</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#gallery">Gallery</a></li>
@@ -72,7 +72,7 @@
   <!-- 🔷 WHY CHOOSE US SECTION -->
   <section id="why" class="why">
     <div class="container">
-      <h2>Why Choose Us?</h2>
+      <h2>Our Pride</h2>
 
       <!-- 3 FEATURE CARDS -->
       <div class="card-grid">
@@ -140,19 +140,35 @@
   </section>
 
   <!-- 🔷 GALLERY SECTION -->
-  <section id="gallery" class="gallery">
-    <div class="container">
-      <h2>Gallery</h2>
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2>Gallery</h2>
 
-      <!-- GALLERY GRID (Replace images with your own) -->
-      <div class="gallery-grid">
+    <div class="slideshow-container">
+      <div class="slide fade">
         <img src="images/pass1.jpg" alt="Passed Test Certificate">
+      </div>
+      <div class="slide fade">
         <img src="images/car1.jpg" alt="Dual Control Car">
+      </div>
+      <div class="slide fade">
         <img src="images/pass2.jpg" alt="Happy Student">
+      </div>
+      <div class="slide fade">
         <img src="images/car2.jpg" alt="Automatic Car">
       </div>
+
+      <!-- Navigation dots -->
+      <div class="dots">
+        <span class="dot" onclick="showSlide(0)"></span>
+        <span class="dot" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+        <span class="dot" onclick="showSlide(3)"></span>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- 🔷 CONTACT SECTION -->
   <section id="contact" class="contact">
