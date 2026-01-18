@@ -1,0 +1,202 @@
+/* =====================================================
+   STORIES PAGE BACKGROUND
+===================================================== */
+body.stories-bg {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 140, 0, 0.45) 0%,
+    rgba(180, 140, 255, 0.45) 100%
+  );
+  backdrop-filter: blur(8px);
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* =====================================================
+   HEADER (shared)
+===================================================== */
+.header {
+  background: #1f2937;
+  color: #fff;
+  padding: 1px 0;
+  position: relative;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  background: #f97316;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+
+
+/* =====================================================
+   UNIVERSAL GLASS BOX (shared)
+===================================================== */
+.glass-box {
+  background: linear-gradient(135deg, rgba(220, 10, 227, 0.2), rgba(255, 182, 193, 0.25));
+  border: 1px solid rgba(211, 22, 185, 0.4);
+  border-radius: 12px;
+  padding: 20px 30px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.2);
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+
+
+/* =====================================================
+   STORIES GALLERY
+===================================================== */
+.stories-gallery {
+  padding: 40px 20px;
+}
+
+.google-style-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 80px;
+  letter-spacing: -1px;
+}
+
+.google-text {
+  background: linear-gradient(to right,
+    #4285F4 0%,
+    #EA4335 25%,
+    #FBBC05 50%,
+    #34A853 75%,
+    #4285F4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gray-text {
+  color: #5f6368;
+  margin-left: 8px;
+}
+
+
+
+/* =====================================================
+   PHOTO GRID
+===================================================== */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.photo-item img {
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  padding-top: 60px;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 70vh;
+  border-radius: 20px;
+}
+
+.modal p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+
+/* =====================================================
+   MOBILE LAYOUT
+===================================================== */
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
+  .photo-item img {
+    border-radius: 12px;
+  }
+}
